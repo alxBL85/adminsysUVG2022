@@ -10,18 +10,18 @@ const sumar = (req, res, next) => {
 
 const restar = (req, res, next) => {
     const { a, b} = req.params;
-    res.json({suma: a-b});
+    res.json({resta: a-b});
 }
 
 
 const multiplicar = (req, res, next) => {
     const { a, b} = req.params;
-    res.json({suma: a*b});
+    res.json({multiplicacion: a*b});
 }
 
 const dividir = (req, res, next) => {
     const {a, b} = req.params;
-    res.json({dividir: a/b});
+    res.json({divicion: a/b});
 }
 
 exports.sumar = sumar;
