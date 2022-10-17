@@ -1,14 +1,16 @@
 const express = require('express');
 const path = require('path');
 const mathRoutes = require("./routes/mathRoutes");
+require('dotenv').config();
+
 
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.get("/isAlive", (req, res)=>{
-    console.log(">>> yes!");
-    res.send("yes");
+    console.log(">>> yes!");   
+    res.send( `hola ${process.env.api_key}`);
 });
 
 // ------------------------------------------------

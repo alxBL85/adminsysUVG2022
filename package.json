@@ -4,12 +4,16 @@
   "description": "demo project for course Administracion y Mantenimiento de Sistemas at UVG",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon src/server.js",
+    "sonar": "sonar-scanner.bat -D sonar.login=%SONAR_LOGIN%"
   },
   "author": "Alexander Bolanos Lima",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "jest": "^29.1.2"
