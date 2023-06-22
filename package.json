@@ -11,7 +11,7 @@
   "author": "Alexander Bolanos Lima",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.1.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.20"
   },
